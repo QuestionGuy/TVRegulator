@@ -10,8 +10,22 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+
+    private TvController createTvController(){
+        return new TvController("10.0.0.23");
+    }
+
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void tvcontroller_getVolume() throws  Exception {
+        TvController controller = createTvController();
+        assertEquals(0,controller.getVolume());
+    }
+
+    @Test
+    public void tvcontroller_setVolume() throws Exception {
+        TvController controller = createTvController();
+        boolean res = controller.setVolume(0);
+
+        assertEquals(res, true);
     }
 }
