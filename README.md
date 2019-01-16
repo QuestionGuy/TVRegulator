@@ -1,2 +1,3 @@
 # TVRegulator
-Lowers the volume while I'm asleep
+Some household members used to watch tv very loudly in the morning.<br>
+So I made this app to keep it quiet in the early hours of the day.
